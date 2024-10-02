@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Aplicación de Productos</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+</head>
+<body>
+    
+   
+    <nav class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-brand">
+            <b>CATÁLOGO</b>
+        </a> 
+    </nav>
+
+    <div class="container">
+      
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><b>NUEVO</b></h5>
+                    </div>
+                    <form id="product-id" class="card-body">
+                        <h5><b>PRODUCTO</b></h5>
+                        <div class="form-group">
+                            <input type="text" id="nombre" placeholder="Nombre" class="form-control">
+                        </div>
+                        <div class="form-group" span class="input-group-text">Q.</span>
+                            <input type="text" step="0.01" id="precio"  placeholder="Precio" class="from-control" >
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="anio" min="2010" value="2024" max="2030" placeholder="Año" class="form-control">
+                        </div>
+                        <input type="submit" value="Agregar" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+            <div id="product-list" class="col-md-8"></div>
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
